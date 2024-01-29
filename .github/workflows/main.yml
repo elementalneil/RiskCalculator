@@ -1,0 +1,28 @@
+name: Lizard Analysis
+
+on: [push, pull_request]
+
+jobs:
+  lizard_analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Replace with your desired Python version
+
+    - name: Install dependencies
+      run: pip install lizard
+
+    - name: Run Lizard
+      run: lizard --xml . > lizard-report.xml
+
+    - name: Upload Lizard Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: lizard-report
+        path: lizard-report.xml
