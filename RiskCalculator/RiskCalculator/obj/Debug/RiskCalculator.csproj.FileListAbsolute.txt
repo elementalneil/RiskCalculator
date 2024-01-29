@@ -1,0 +1,7 @@
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\bin\Debug\RiskCalculator.exe.config
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\bin\Debug\RiskCalculator.exe
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\bin\Debug\RiskCalculator.pdb
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\obj\Debug\RiskCalculator.csproj.AssemblyReference.cache
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\obj\Debug\RiskCalculator.csproj.CoreCompileInputs.cache
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\obj\Debug\RiskCalculator.exe
+C:\My Files\Visual Studio Repos\RiskCalculator\RiskCalculator\obj\Debug\RiskCalculator.pdb
