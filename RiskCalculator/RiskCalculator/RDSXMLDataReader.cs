@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,8 +28,9 @@ namespace RiskCalculator {
             XmlNodeList rdsNodes = xmlDocument.SelectNodes(xPathExpression);
 
             List<RDSDataModel> rdsDataModelList = new List<RDSDataModel>();
-            if (rdsNodes != null) {
-                foreach (XmlNode rdsNode in rdsNodes) {
+            if (rdsNodes == null) { return rdsDataModelList; }
+
+            foreach (XmlNode rdsNode in rdsNodes) {
                     RDSDataModel rdsData = new RDSDataModel();
 
                     rdsData.CounterPartyID = rdsNode.SelectSingleNode("counterPartyID")?.InnerText;
@@ -38,7 +39,6 @@ namespace RiskCalculator {
 
                     rdsDataModelList.Add(rdsData);
                 }
-            }
 
             return rdsDataModelList;
         }
