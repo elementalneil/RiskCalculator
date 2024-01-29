@@ -1,6 +1,9 @@
 name: Lizard Analysis
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   lizard_analysis:
