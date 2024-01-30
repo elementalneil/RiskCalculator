@@ -32,9 +32,9 @@ namespace RiskCalculator {
                 foreach (XmlNode tdsNode in tdsNodes ) {
                     TDSDataModel tdsData = new TDSDataModel();
 
-                    tdsData.TradeID = tdsNode.SelectSingleNode("tradeID")?.InnerText;
-                    tdsData.Date = tdsNode.SelectSingleNode("date")?.InnerText;
-                    int value = Int32.Parse(tdsNode.SelectSingleNode("value")?.InnerText);
+                    tdsData.TradeID = tdsNode.SelectSingleNode("tradeID").InnerText;
+                    tdsData.Date = tdsNode.SelectSingleNode("date").InnerText;
+                    int value = Int32.Parse(tdsNode.SelectSingleNode("value").InnerText);
                     tdsData.Value = value;
                     tdsData.CounterPartyIDRef = tdsNode.SelectSingleNode("counterPartyID")?.InnerText;
 
